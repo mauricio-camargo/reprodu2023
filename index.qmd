@@ -1,26 +1,43 @@
 ---
-title: "index"
+title: "Passos para integrar RStudio e Github"
 format: html
-editor: visual
 ---
 
-## Quarto
+---
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Instalar os seguintes programas:
 
-## Running Code
+-   R: <https://cran.r-project.org>
+-   RStudio: <https://posit.co/download/rstudio-desktop/>
+-   Quarto: <https://quarto.org/docs/get-started/>  
+Mini-tutorial do Quarto:   <https://rpubs.com/camargo/MiniTutorialQuarto>
+-   Git: <https://git-scm.com/download/>
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Instalar os seguintes pacotes no R:
 
-```{r}
-1 + 1
+```{.r}
+install.packages('usethis','devtools', 'rmarkdown','knitr')
 ```
 
-You can add options to executable code like this
+## Criar uma conta gratuita no Github
 
-```{r}
-#| echo: false
-2 * 2
-```
+<https://github.com/>
 
-The `echo: false` option disables the printing of code (only output is displayed).
+
+## Desativar .RData e . Rhistory no RStudio
+
+O RStudio grava todos os objetos (incluindo datasets) no arquivo oculto **.RData** e todos os comandos usados na IDE no arquivo **.Rhistory**.
+
+Estes arquivos podem chegar a tamanhos de muitos gigabytes epor isso devem ser desativados.  
+
+Para isso, é preciso entrar nas configurações do RStudio em:
+
+`Tools < Global Options < General`
+
+![](images/RStudio1.png)
+
+
+
+## Referências (todas criadas com RStudio)
+-   Curso-r: <https://curso-r.github.io/zen-do-r/>
+-   R for data science: <https://r4ds.had.co.nz/>
