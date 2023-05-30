@@ -10,7 +10,7 @@ title-slide-attributes:
 format: 
   revealjs:
     #Veja outros temas em https://quarto.org/docs/presentations/revealjs/themes.html
-    theme: [serif, myarq/custom.scss]
+    theme: [serif, MeuCustom.scss]
     logo: images/furg4.png
 #    footer: "`Reprodutibilidade científica`"
     slide-number: true
