@@ -1,41 +1,28 @@
 ---
-title: "Passos para integrar RStudio e Github"
+title: "Disciplina de Reprodutilibidade científica no R"
+lang: pt
 format: html
 ---
 
 ---
 
-## Instalar os seguintes programas:
+:::{.callout-note}
+Disciplina do `PPGAMB`, também oferecida para `PPGO` e `PPGOB`.  
+:::
 
--   R: <https://cran.r-project.org>
--   RStudio: <https://posit.co/download/rstudio-desktop/>
--   Quarto: <https://quarto.org/docs/get-started/>  
-Mini-tutorial do Quarto:   <https://rpubs.com/camargo/MiniTutorialQuarto>
--   Git: <https://git-scm.com/download/>
+### Tutorial de integração do RStudio com Git
 
-## Instalar os seguintes pacotes no R:
+São muitos os passos para integrar o RStudio com o Git. Com o Quarto, tudo ainda é novo e não existe muito material na internet. Mas, no final, certamente terá valido muito à pena.
 
-```{.r}
-install.packages('usethis','devtools', 'rmarkdown','knitr')
-```
+Preparei este tutorial com todos os passos para, no fim, criar um site completo usando o Quarto, de maneira muito fácil.
 
-## Criar uma conta gratuita no Github
-
-<https://github.com/>
+[Tutorial de integração ente RStudio e Github](integrar_Git_RStudio.html)
 
 
-## Desativar .RData e . Rhistory no RStudio
+### Aulas anteriores
+[Aula1.html](Aula1.html)  
+[Tutorial_Quarto.html](Tutorial_Quarto.html)
 
-O RStudio grava todos os objetos (incluindo datasets) no arquivo oculto **.RData** e todos os comandos usados na IDE no arquivo **.Rhistory**.
+Preparei também este vídeo rápido para auxiliar no tutorial. 
 
-Estes arquivos podem chegar a tamanhos de muitos gigabytes epor isso devem ser desativados.  
 
-Para isso, é preciso entrar nas configurações do RStudio e fazer as seguintes modificações:
-
-`Tools < Global Options < General`
-
-![](images/RStudio1.png)
-
-## Referências (todas criadas com RStudio)
--   Curso-r: <https://curso-r.github.io/zen-do-r/>
--   R for data science: <https://r4ds.had.co.nz/>
