@@ -21,7 +21,7 @@ execute:
 
 #### Comentários no Quarto
 ``` r
-<!-- -->
+<!-- Aqui vai o comentário -->
 ```
 ::: {.column-margin}
 Este estilo de comentário é herdado do HTML e é uma porcaria. 

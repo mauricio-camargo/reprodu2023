@@ -88,9 +88,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#criar-um-novo-repositório-do-github" id="toc-criar-um-novo-repositório-do-github" class="nav-link" data-scroll-target="#criar-um-novo-repositório-do-github">7. Criar um novo repositório do Github</a></li>
   <li><a href="#criar-um-novo-projeto-no-rstudio" id="toc-criar-um-novo-projeto-no-rstudio" class="nav-link" data-scroll-target="#criar-um-novo-projeto-no-rstudio">8. Criar um novo projeto no RStudio</a></li>
   <li><a href="#sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github." id="toc-sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github." class="nav-link" data-scroll-target="#sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github.">9. Sincronizar os arquivos locais com os arquivos remotos do Github.</a></li>
-  <li><a href="#criando-um-site-completo-usange-git-pages" id="toc-criando-um-site-completo-usange-git-pages" class="nav-link" data-scroll-target="#criando-um-site-completo-usange-git-pages">10. Criando um site completo usange Git pages</a></li>
+  <li><a href="#criando-um-site-completo-usange-github-pages" id="toc-criando-um-site-completo-usange-github-pages" class="nav-link" data-scroll-target="#criando-um-site-completo-usange-github-pages">10. Criando um site completo usange Github pages</a></li>
   <li><a href="#habilitando-o-github-pages" id="toc-habilitando-o-github-pages" class="nav-link" data-scroll-target="#habilitando-o-github-pages">11. Habilitando o Github Pages</a></li>
-  <li><a href="#referências-todas-os-sites-foram-criados-com-rstudio" id="toc-referências-todas-os-sites-foram-criados-com-rstudio" class="nav-link" data-scroll-target="#referências-todas-os-sites-foram-criados-com-rstudio">11. Referências (todas os sites foram criados com RStudio)</a></li>
+  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">12. Referências:</a></li>
   </ul>
 </nav>
 </div>
@@ -134,7 +134,10 @@ Mini-tutorial do Quarto: <a href="https://rpubs.com/camargo/MiniTutorialQuarto" 
 </div></div><p>O pacote <code>tinytex</code> do R serve para instalar toda a infra-estrutura para lidar com PDFs.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'tinytex'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Antes do pacote tinytex a instalação do LaTeX era um inferno!</p>
+</div></div></section>
 <section id="desativar-.rdata-e-.-rhistory-no-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="desativar-.rdata-e-.-rhistory-no-rstudio">3. Desativar .RData e . Rhistory no RStudio</h2>
 <p>O RStudio grava todos os objetos (incluindo datasets) no arquivo oculto <strong>.RData</strong> e todos os comandos usados na IDE no arquivo <strong>.Rhistory</strong>.</p>
@@ -148,29 +151,41 @@ Mini-tutorial do Quarto: <a href="https://rpubs.com/camargo/MiniTutorialQuarto" 
 <p><a href="https://github.com/" class="uri">https://github.com/</a></p>
 <p><code>Guarde muito bem seu nome de usuário e senha do Github.</code></p>
 </section>
-<section id="instalar-o-git" class="level2">
+<section id="instalar-o-git" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="instalar-o-git">5. Instalar o Git</h2>
 <p>Git: <a href="https://git-scm.com/download/" class="uri">https://git-scm.com/download/</a></p>
-<p>Teste a instalção do Git no terminal do Windows.<br>
-Procure por cmd e no prompt do terminal digite:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>git <span class="sc">--</span>version</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Teste a instalação do Git no terminal do Windows.<br>
+Para abrir o terminal, clique no botão Iniciar do Windows e digite <code>cmd</code>. Quando a tela do terminal abrir, digite:</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>cmd é o terminal de comando do Windows, ou seja, a janela onde se digitam comandos ao sistema operacional. Em Linux e Mac é conhecido só como Terminal</p>
+</div></div><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>git <span class="sc">--</span>version</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="configurar-o-git" class="level2">
+<section id="configurar-o-git" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="configurar-o-git">6. Configurar o Git</h2>
 <ul>
 <li>Gravar no Git o nome de usuário e email</li>
 </ul>
 <p>Através do pacote <code>usethis</code> podemos configurar o Git diretamente do RStudio.</p>
-<p>Vamos agora informar seu nome do usuário no Github e seu email usado para abrir a conta. Isso só é feito uma vez.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Antes do pacote <code>usethis</code> a configuração do Git era um sofrimento!</p>
+</div></div><p>Vamos agora informar seu nome do usuário no Github e seu email usado para abrir a conta. Isso só é feito uma vez.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.name =</span> <span class="st">"SEU NOME NO GITHUB"</span>,</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.email =</span> <span class="st">"seu_email_no@gmail.com"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Crie um Personal Access Token (PAT)</li>
+<li>Crie um <strong>Personal Access Token</strong> (PAT)</li>
 </ul>
 <p>De uns tempos para cá o Github aperfeiçoou o método de autenticação no site, de modo que a senha do usuário foi substituída por um <code>token</code> chamado PAT.</p>
-<p>O PAT também pode ser criado dentro do RStudio usando o pacote <code>usethis</code>.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Lembre-se sempre que a senha pode ser substituído pelo token. Se em algum momento o Rstudio pedir a senha do Git, use o token.</p>
+</div></div><p>O PAT também pode ser criado dentro do RStudio usando o pacote <code>usethis</code>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Você pode acessar diretamente a página do Github para criar um PAT, mas usando o pacote <code>usethis</code> as configurações do PAT são pré-fixadas.</p>
+</div></div><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Uma janela do navegador irá se abrir e você precisará informar o nome do usuário do Github e a senha.</p>
 <p><img src="images/Novo_PAT_do_Github.png" class="img-fluid"></p>
 <p>Escreva um nome para o token e escolha uma data de validade para ele. Deixe todo o resto das opções como estão e pressione o botão <code>Generate token</code>.</p>
@@ -187,17 +202,20 @@ Cuidado
 <blockquote class="blockquote">
 <p>ATENÇÃO:</p>
 </blockquote>
-<p>Copie e guarde o token <code>AGORA</code>. Você não terá outra chance! No entanto, um novo token pode ser criado a qualquer momento.</p>
+<p>Copie e guarde o token <code>AGORA</code>. Você não terá outra chance! Em nenhum lugar você vai achá-lo novamente.</p>
 </div>
 </div>
-<ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>No entanto, um novo token pode ser criado e utilizado a qualquer momento.</p>
+</div></div><ul>
 <li>Atribuir o PAT ao Git para sempre</li>
 </ul>
-<p>Usando o pacote gitcreds, você pode informar o Git seu recém-criado PAT e você não mais precisará informá-lo toda vez que atualizar o Github.</p>
+<p>Usando o pacote <code>gitcreds</code>, você pode informar o Git seu recém-criado PAT e você não mais precisará informá-lo toda vez que atualizar o Github.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Um prompt na janela de console do R dentro do RStudio vai pedir:</p>
 <p><code>? Enter password or token:</code></p>
-<p>Cole o token recém-copiado e pronto, estamos quase lá!</p>
+<p>Para responder, clique na janela e cole (ctrl-V) o token recém-copiado e pronto, estamos quase lá!</p>
 <p>Para conferir se está tudo certo, digite:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_sitrep</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-caution callout-titled">
@@ -213,30 +231,36 @@ Cuidado
 <blockquote class="blockquote">
 <p>PRONTO!</p>
 </blockquote>
-<p>O seu RStudio está configurado para manipular arquivos do Github e criar sites inteiros usando o <code>Quarto</code>.</p>
+<p>O seu RStudio está configurado para manipular arquivos do Github e criar sites inteiros usando o <strong>Quarto</strong>.</p>
 </div>
 </div>
 </section>
-<section id="criar-um-novo-repositório-do-github" class="level2">
+<section id="criar-um-novo-repositório-do-github" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="criar-um-novo-repositório-do-github">7. Criar um novo repositório do Github</h2>
-<p>Entre na página inicial do Github e na parte duperior da tela à esquerda pressione o botão <code>NEW</code>.</p>
-<p>Dê um nome para o novo repositório e pressione <code>Add a README file</code>. Mantenha o repositório como público para que posteriormente possamos transformá-lo num site.</p>
+<p>Entre na página inicial do Github e na parte superior da tela à esquerda pressione o botão <code>NEW</code>.</p>
+<p>Dê um nome para o novo repositório e pressione <code>Add a README file</code>. Mantenha o repositório como público para que posteriormente possamos transformá-lo num site (sites privados não podem).</p>
 <p><img src="images/Novo_reposit.png" class="img-fluid"></p>
-<p>Pronto! O novo repositório foi criado e já pode ser acessado pelo RStudio. Para isso, pressione o botão <code>&lt; &gt; Code</code> e depois o botão <code>Copiar</code>.</p>
-<p><img src="images/CopiarHTTPS.png" class="img-fluid"></p>
+<p>Pronto! O novo repositório foi criado e já pode ser acessado pelo RStudio, por um processo chamado clonagem. Para clonar qualquer repositório no RStudio, pressione o botão <code>&lt; &gt; Code</code> e depois o botão <code>Copiar</code>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Existem dois métodos para clonar um repositório, usando HTTPS e SSH. Aqui usaremos HTTPS, que é mais simples. SSH é usado em outros sistemas (Linux e Mac), mas é muito mais complicado.</p>
+</div></div><p><img src="images/CopiarHTTPS.png" class="img-fluid"></p>
 </section>
-<section id="criar-um-novo-projeto-no-rstudio" class="level2">
+<section id="criar-um-novo-projeto-no-rstudio" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="criar-um-novo-projeto-no-rstudio">8. Criar um novo projeto no RStudio</h2>
 <p>Um projeto no RStudio serve para agregar vários arquivos em um único diretório, que poderão ser manipulados mais facilmente.</p>
 <p>No RStudio, entre em <code>File&lt;New project</code>.</p>
 <p>Na próxima tela, você poderá escolher entre criar um novo projeto num novo diretório, num diretório existente ou usando <code>controle de versões</code>, no caso, o Git.</p>
 <p><img src="images/Novo_Proj.png" class="img-fluid"></p>
-<p>Em <code>Repository URL</code>, cole o a URL copiada lá no Github. O nome do novo diretório sugerido irá aparecer no outro campo. Por fim, escolha uma pasta onde uma cópia local do repositório será copiado.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Hoje em dia eu guardo absolutamente tudo o que é produzido em R ou Python no Github.</p>
+</div></div><p>Em <code>Repository URL</code>, cole o a URL copiada lá no Github. O nome do novo diretório sugerido irá aparecer no outro campo. Por fim, escolha uma pasta onde uma cópia local do repositório será copiado.</p>
 <p><img src="images/Novo_Proj2.png" class="img-fluid"></p>
 <p>O que aconteceu foi que o RStudio baixou todos os arquivos do repositório recém-criado no Github e agora você pode modificá-los localmente a atualizá-los remotamente.</p>
 <p>Pronto! Você está com tudo pronto para começar a criar conteúdo para o seu repositório do Github.</p>
 <p>Na aba <code>Files</code> do RStudio, clique no arquivo <code>README.md</code>.</p>
-<p>Este é um arquivo Markdown e portanto aceita toda a formatação do RMArkdown que já vimos.</p>
+<p>Este é um arquivo Markdown e portanto aceita toda a formatação do RMarkdown que já vimos.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Teste de repositório</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="do">### Autor</span></span>
@@ -244,26 +268,34 @@ Cuidado
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Este é apenas um repositório de test.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Para testá-lo, pressione <code>Preview</code> ou Ctrl+Shift+K.</p>
 </section>
-<section id="sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github." class="level2">
+<section id="sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github." class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github.">9. Sincronizar os arquivos locais com os arquivos remotos do Github.</h2>
-<p>A sincronização dos arquivos não é tão simples quanto poderia ser, mas lembre-se que estamos lidando com um sistema (Git) que serve para versionamento de programas que podem ser manipulados por muitas pessoas,e por isso temos que aprender o seu funcionamento.</p>
+<p>A sincronização dos arquivos não é tão simples quanto poderia ser, mas lembre-se que estamos lidando com um sistema (Git) que serve para versionamento de programas que podem ser manipulados por muitas pessoas, e por isso temos que aprender o seu funcionamento.</p>
 <p>Quando estamos com um projeto aberto no RStudio, aparece uma aba chamada <code>Git</code>, que é a partir de onde faremos as transferências dos arquivos.</p>
 <p>Todos os arquivos modificados aparecem ali. Clique em todos eles.</p>
 <p><img src="images/Tela_Git.png" class="img-fluid"></p>
-<p>Depois pressione o botão <code>Commit</code>. Na nomenclatura Git, Commit significa gravar no disco as modificações, de forma preparar todos os arquivos para serem enviados ao Github.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>PROBLEMA: quando existem muitos arquivos para fazer um Commit, o RStudio pode travar. Isso acontece principalmente para apresentações do <strong>Quarto</strong> usando <code>revealjs</code>, que instalam a biblioteca inteira e isso representam dezenas de arquivos.<br>
+<br> Para solucionar isso, procure pela aba Terminal dentro do RStudio e digite o seguinte comando, que vai fazer um Commit sem passar pelo RStudio:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>git add <span class="sc">-</span>A <span class="sc">&amp;&amp;</span> git commit <span class="sc">-</span>m <span class="st">"staging all files"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div><p>Depois pressione o botão <code>Commit</code>. Na nomenclatura Git, Commit significa gravar no disco as modificações, de forma preparar todos os arquivos para serem enviados ao Github.</p>
 <p>A seguinte tela vai aparecer:</p>
 <p><img src="images/Tela_Commit.png" class="img-fluid"></p>
 <p>Antes de pressionar o botão <code>Commit</code>, você é obrigado a escreve alguma coisa em <code>Commit message</code>, caso contrário o processo será abortado. Isso é uma forma de obrigá-lo a documentar toda e qualquer mudança nos códigos.</p>
 <p>Depois de pressionar o botão <code>Commit</code>, uma tela de comando vai aparecer e pode ser fechada.</p>
-<p>A operação de enviar os arquivos para o Github, ou seja, fazer um upload, é chamada no linguajar do Git de <code>PUSH</code>. PULL seria a operação oposto, de download de uma versão modificada no site, e é muito importante baixar as versões modificadas antes de começar a trabalhar quando existem muitas pessoas modificando o arquivo simultaneamente.</p>
+<p>A operação de enviar os arquivos para o Github, ou seja, fazer um upload, é chamada no linguajar do Git de <code>PUSH</code>. PULL seria a operação oposta, de download de uma versão o site, e é muito importante baixar as versões modificadas antes de começar a trabalhar localmente quando existem muitas pessoas modificando o arquivo simultaneamente.</p>
 <p>Pressione então o botão <code>Push</code> e verifique lá na página do seu repositório do Github se as modificações foram efetuadas.</p>
+<div class="asides">
+<p>Às vezes pode demorar alguns minutos até que as alterações apareçam online no site. Outros vezes a atualização é muito rápida.</p>
+</div>
 <p><img src="images/Tela_Atualizada.png" class="img-fluid"></p>
 </section>
-<section id="criando-um-site-completo-usange-git-pages" class="level2">
-<h2 class="anchored" data-anchor-id="criando-um-site-completo-usange-git-pages">10. Criando um site completo usange Git pages</h2>
-<p>Inicialmente, crie um arquivo novo do tipo Quarto document, em <code>File&lt;New file&lt;Quarto document...</code>. O documento vem com o template padrão do Quarto, então faça algumas modificações.</p>
+<section id="criando-um-site-completo-usange-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="criando-um-site-completo-usange-github-pages">10. Criando um site completo usange Github pages</h2>
+<p>Inicialmente, crie um arquivo novo do tipo Quarto document, em <code>File&lt;New file&lt;Quarto document...</code>. O documento vem com o template padrão do Quarto, então você precisa fazer algumas modificações.</p>
 <p>Salve este arquivo <code>OBRIGATORIAMENTE</code> com o nome de <code>index.qmd</code> no diretório do projeto.</p>
-<p>Pressione o botão <code>Render</code> ou Ctrl+Shift+K para renderizar o arquivo .qmd e criar o arquivo .html.</p>
+<p>Pressione o botão <code>Render</code> ou Ctrl+Shift+K para renderizar o arquivo index.qmd e criar o arquivo index.html. Este será o arquivo da primeira página do seu site. Outras páginas são criadas da mesma maneira.</p>
 <p>Faça um <code>Commit</code> e depois um <code>Push</code>, conforme explicado anteriormente.</p>
 </section>
 <section id="habilitando-o-github-pages" class="level2">
@@ -272,13 +304,16 @@ Cuidado
 <p>Pronto, em alguns segundos o site estará no ar.</p>
 <p><img src="images/Tela_Git_Page.jpg" class="img-fluid"></p>
 </section>
-<section id="referências-todas-os-sites-foram-criados-com-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="referências-todas-os-sites-foram-criados-com-rstudio">11. Referências (todas os sites foram criados com RStudio)</h2>
+<section id="referências" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="referências">12. Referências:</h2>
 <ul>
 <li>Curso-r: <a href="https://curso-r.github.io/zen-do-r/" class="uri">https://curso-r.github.io/zen-do-r/</a></li>
 <li>R for data science: <a href="https://r4ds.had.co.nz/" class="uri">https://r4ds.had.co.nz/</a></li>
 </ul>
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Precisei adaptar muita coisa desses sites, que foram criados há apenas alguns meses e já estãi ligeiramente desatualisados.</p>
+</div></div></section>
 
 </main>
 <!-- /main column -->
