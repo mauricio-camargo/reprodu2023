@@ -271,6 +271,6 @@ Pronto, em alguns segundos o site estará no ar.
 -   R for data science: <https://r4ds.had.co.nz/>
 
 ::: aside
-Precisei adaptar muita coisa desses sites, que foram criados há apenas alguns meses e já estãi ligeiramente desatualisados.
+Precisei adaptar muita coisa desses sites, que foram criados há apenas alguns meses e já estão ligeiramente desatualizados.
 :::
 
