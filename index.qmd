@@ -8,7 +8,7 @@ format: html
 
 ---
 
-[Código desta página em Quarto no Github](https://github.com/mauricio-camargo/)
+[Código desta página em Quarto no Github](https://github.com/mauricio-camargo?tab=repositories)
 
 :::{.callout-note}
 Esta disciplina é do `PPGAMB`, e também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
@@ -34,7 +34,7 @@ Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutori
 
 ### Aulas anteriores
 
-[Todos os códigos em Quarto das páginas abaixo estão no Github](https://github.com/mauricio-camargo/)
+[Todos os códigos em Quarto das páginas abaixo estão no Github](https://github.com/mauricio-camargo?tab=repositories)
 
 [Aula1.html](Aula1.html)  
 [Tutorial_Quarto.html](Tutorial_Quarto.html)  
