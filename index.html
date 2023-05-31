@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Passos para integrar RStudio e Github</title>
+<title>Disciplina de Reprodutilibidade científica no R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -79,7 +45,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Passos para integrar RStudio e Github</h1>
+<h1 class="title">Disciplina de Reprodutilibidade científica no R</h1>
 </div>
 
 
@@ -95,38 +61,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <hr>
-<section id="instalar-os-seguintes-programas" class="level2">
-<h2 class="anchored" data-anchor-id="instalar-os-seguintes-programas">Instalar os seguintes programas:</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Esta disciplina é do <code>PPGAMB</code>, e também é oferecida para <code>PPGO</code> e <code>PPGOB</code>, todos da FURG.</p>
+</div>
+</div>
+<section id="tutorial-de-integração-do-rstudio-com-o-git" class="level3">
+<h3 class="anchored" data-anchor-id="tutorial-de-integração-do-rstudio-com-o-git">Tutorial de integração do RStudio com o Git</h3>
+<p>São muitos os passos para integrar o RStudio com o Git. Com o Quarto, tudo ainda é novo e não existe muito material na internet. Mas, no final, certamente terá valido muito à pena.</p>
+<p>Preparei este tutorial com todos os passos para, no fim, criar um site completo usando o Quarto, de maneira muito fácil.</p>
+<p><a href="integrar_Git_RStudio.html">Tutorial de integração ente RStudio e Github</a></p>
+<p>Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutorial. Qualquer conteúdo serve, desde as páginas contenham:</p>
 <ul>
-<li>R: <a href="https://cran.r-project.org" class="uri">https://cran.r-project.org</a></li>
-<li>RStudio: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
-<li>Quarto: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a><br>
-Mini-tutorial do Quarto: <a href="https://rpubs.com/camargo/MiniTutorialQuarto" class="uri">https://rpubs.com/camargo/MiniTutorialQuarto</a></li>
-<li>Git: <a href="https://git-scm.com/download/" class="uri">https://git-scm.com/download/</a></li>
+<li>pelo menos três páginas</li>
+<li>Links entre estas páginas</li>
+<li>Links externos</li>
+<li>pelo menos 1 imagem</li>
+<li>pelo menos uma tabela e um gráfico do R, inserido com chunk</li>
+<li>uma fórmula</li>
 </ul>
 </section>
-<section id="instalar-os-seguintes-pacotes-no-r" class="level2">
-<h2 class="anchored" data-anchor-id="instalar-os-seguintes-pacotes-no-r">Instalar os seguintes pacotes no R:</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'usethis'</span>,<span class="st">'devtools'</span>, <span class="st">'rmarkdown'</span>,<span class="st">'knitr'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="criar-uma-conta-gratuita-no-github" class="level2">
-<h2 class="anchored" data-anchor-id="criar-uma-conta-gratuita-no-github">Criar uma conta gratuita no Github</h2>
-<p><a href="https://github.com/" class="uri">https://github.com/</a></p>
-</section>
-<section id="desativar-.rdata-e-.-rhistory-no-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="desativar-.rdata-e-.-rhistory-no-rstudio">Desativar .RData e . Rhistory no RStudio</h2>
-<p>O RStudio grava todos os objetos (incluindo datasets) no arquivo oculto <strong>.RData</strong> e todos os comandos usados na IDE no arquivo <strong>.Rhistory</strong>.</p>
-<p>Estes arquivos podem chegar a tamanhos de muitos gigabytes epor isso devem ser desativados.</p>
-<p>Para isso, é preciso entrar nas configurações do RStudio e fazer as seguintes modificações:</p>
-<p><code>Tools &lt; Global Options &lt; General</code></p>
-<p><img src="images/RStudio1.png" class="img-fluid"></p>
-</section>
-<section id="referências-todas-criadas-com-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="referências-todas-criadas-com-rstudio">Referências (todas criadas com RStudio)</h2>
-<ul>
-<li>Curso-r: <a href="https://curso-r.github.io/zen-do-r/" class="uri">https://curso-r.github.io/zen-do-r/</a></li>
-<li>R for data science: <a href="https://r4ds.had.co.nz/" class="uri">https://r4ds.had.co.nz/</a></li>
-</ul>
+<section id="aulas-anteriores" class="level3">
+<h3 class="anchored" data-anchor-id="aulas-anteriores">Aulas anteriores</h3>
+<p><a href="Aula1.html">Aula1.html</a><br>
+<a href="Tutorial_Quarto.html">Tutorial_Quarto.html</a></p>
 </section>
 
 </main>
@@ -185,12 +151,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

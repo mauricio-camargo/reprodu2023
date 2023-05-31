@@ -2,15 +2,17 @@
 title: "Disciplina de Reprodutilibidade científica no R"
 lang: pt
 format: html
+#Mágica para dar Commit quando trava com muitos arquivos
+#git add -A && git commit -m 'staging all files'
 ---
 
 ---
 
 :::{.callout-note}
-Disciplina do `PPGAMB`, também oferecida para `PPGO` e `PPGOB`.  
+Esta disciplina é do `PPGAMB`, e também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
 :::
 
-### Tutorial de integração do RStudio com Git
+### Tutorial de integração do RStudio com o Git
 
 São muitos os passos para integrar o RStudio com o Git. Com o Quarto, tudo ainda é novo e não existe muito material na internet. Mas, no final, certamente terá valido muito à pena.
 
@@ -18,11 +20,18 @@ Preparei este tutorial com todos os passos para, no fim, criar um site completo 
 
 [Tutorial de integração ente RStudio e Github](integrar_Git_RStudio.html)
 
+Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutorial. Qualquer conteúdo serve, desde as páginas contenham:  
+
+- pelo menos três páginas
+- Links entre estas páginas
+- Links externos
+- pelo menos 1 imagem
+- pelo menos uma tabela e um gráfico do R, inserido com chunk
+- uma fórmula
+
+
 
 ### Aulas anteriores
 [Aula1.html](Aula1.html)  
 [Tutorial_Quarto.html](Tutorial_Quarto.html)
-
-Preparei também este vídeo rápido para auxiliar no tutorial. 
-
 
