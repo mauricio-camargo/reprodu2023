@@ -30,7 +30,6 @@ Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutori
 - uma fórmula
 
 
-
 ### Aulas anteriores
 [Aula1.html](Aula1.html)  
 [Tutorial_Quarto.html](Tutorial_Quarto.html)
