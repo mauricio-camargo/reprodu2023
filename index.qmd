@@ -18,7 +18,7 @@ São muitos os passos para integrar o RStudio com o Git. Com o Quarto, tudo aind
 
 Preparei este tutorial com todos os passos para, no fim, criar um site completo usando o Quarto, de maneira muito fácil.
 
-[Tutorial de integração ente RStudio e Github](integrar_Git_RStudio.html)
+[Tutorial de integração ente RStudio e Github](Integrar_Git_RStudio.html)
 
 Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutorial. Qualquer conteúdo serve, desde as páginas contenham:  
 
