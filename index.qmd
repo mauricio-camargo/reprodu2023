@@ -34,5 +34,5 @@ Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutori
 
 ### Aulas anteriores
 [Aula1.html](Aula1.html)  
-[Tutorial_Quarto.html](Tutorial_Quarto.html)
-
+[Tutorial_Quarto.html](Tutorial_Quarto.html)  
+[Página de exemplo do Quarto](Pagina_Exemplo.html)
