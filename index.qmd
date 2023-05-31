@@ -33,6 +33,9 @@ Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutori
 
 
 ### Aulas anteriores
+
+[Todos os códigos em Quarto das páginas abaixo estão no Github](https://github.com/mauricio-camargo/)
+
 [Aula1.html](Aula1.html)  
 [Tutorial_Quarto.html](Tutorial_Quarto.html)  
 [Página de exemplo do Quarto](Pagina_Exemplo.html)
