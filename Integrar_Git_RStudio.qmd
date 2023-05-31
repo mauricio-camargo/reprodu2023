@@ -21,6 +21,10 @@ Mini-tutorial do Quarto:   <https://rpubs.com/camargo/MiniTutorialQuarto>
 install.packages('usethis','gitcreds','devtools', 'markdown','rmarkdown','knitr')
 ```
 
+::: aside
+Esta é uma maneira de instalar vários pacotes de uma só vez.
+:::
+
 O pacote `tinytex` do R serve para instalar toda a infra-estrutura para lidar com PDFs.  
 
 ```{.r}
@@ -200,14 +204,20 @@ Pressione então o botão `Push` e verifique lá na página do seu repositório 
 
 Inicialmente, crie um arquivo novo do tipo Quarto document, em `File<New file<Quarto document...`. O documento vem com o template padrão do Quarto, então faça algumas modificações.
 
-Salve este arquivo `OBRIGRATORIAMENTE` com o nome de `index.qmd` no diretório do projeto.
+Salve este arquivo `OBRIGATORIAMENTE` com o nome de `index.qmd` no diretório do projeto.
 
 Pressione o botão `Render` ou Ctrl+Shift+K para renderizar o arquivo .qmd e criar o arquivo .html.
 
 Faça um `Commit` e depois um `Push`, conforme explicado anteriormente.
 
 
+## 11. Habilitando o Github Pages
 
+Na página do repositório, clique em Settings e depois em Pages. Em Branch, escolha `Main` e pressione `Save`. 
+
+Pronto, em alguns segundos o site estará no ar.
+
+![](images/Tela_Git_Page.jpg)
 
 ## 11. Referências (todas os sites foram criados com RStudio)
 -   Curso-r: <https://curso-r.github.io/zen-do-r/>

@@ -89,13 +89,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#criar-um-novo-projeto-no-rstudio" id="toc-criar-um-novo-projeto-no-rstudio" class="nav-link" data-scroll-target="#criar-um-novo-projeto-no-rstudio">8. Criar um novo projeto no RStudio</a></li>
   <li><a href="#sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github." id="toc-sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github." class="nav-link" data-scroll-target="#sincronizar-os-arquivos-locais-com-os-arquivos-remotos-do-github.">9. Sincronizar os arquivos locais com os arquivos remotos do Github.</a></li>
   <li><a href="#criando-um-site-completo-usange-git-pages" id="toc-criando-um-site-completo-usange-git-pages" class="nav-link" data-scroll-target="#criando-um-site-completo-usange-git-pages">10. Criando um site completo usange Git pages</a></li>
+  <li><a href="#habilitando-o-github-pages" id="toc-habilitando-o-github-pages" class="nav-link" data-scroll-target="#habilitando-o-github-pages">11. Habilitando o Github Pages</a></li>
   <li><a href="#referências-todas-os-sites-foram-criados-com-rstudio" id="toc-referências-todas-os-sites-foram-criados-com-rstudio" class="nav-link" data-scroll-target="#referências-todas-os-sites-foram-criados-com-rstudio">11. Referências (todas os sites foram criados com RStudio)</a></li>
   </ul>
 </nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -124,10 +125,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 Mini-tutorial do Quarto: <a href="https://rpubs.com/camargo/MiniTutorialQuarto" class="uri">https://rpubs.com/camargo/MiniTutorialQuarto</a></li>
 </ul>
 </section>
-<section id="instalar-os-pacotes-no-r" class="level2">
+<section id="instalar-os-pacotes-no-r" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="instalar-os-pacotes-no-r">2.Instalar os pacotes no R:</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'usethis'</span>,<span class="st">'gitcreds'</span>,<span class="st">'devtools'</span>, <span class="st">'markdown'</span>,<span class="st">'rmarkdown'</span>,<span class="st">'knitr'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>O pacote <code>tinytex</code> do R serve para instalar toda a infra-estrutura para lidar com PDFs.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Esta é uma maneira de instalar vários pacotes de uma só vez.</p>
+</div></div><p>O pacote <code>tinytex</code> do R serve para instalar toda a infra-estrutura para lidar com PDFs.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'tinytex'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -258,9 +262,15 @@ Cuidado
 <section id="criando-um-site-completo-usange-git-pages" class="level2">
 <h2 class="anchored" data-anchor-id="criando-um-site-completo-usange-git-pages">10. Criando um site completo usange Git pages</h2>
 <p>Inicialmente, crie um arquivo novo do tipo Quarto document, em <code>File&lt;New file&lt;Quarto document...</code>. O documento vem com o template padrão do Quarto, então faça algumas modificações.</p>
-<p>Salve este arquivo <code>OBRIGRATORIAMENTE</code> com o nome de <code>index.qmd</code> no diretório do projeto.</p>
+<p>Salve este arquivo <code>OBRIGATORIAMENTE</code> com o nome de <code>index.qmd</code> no diretório do projeto.</p>
 <p>Pressione o botão <code>Render</code> ou Ctrl+Shift+K para renderizar o arquivo .qmd e criar o arquivo .html.</p>
 <p>Faça um <code>Commit</code> e depois um <code>Push</code>, conforme explicado anteriormente.</p>
+</section>
+<section id="habilitando-o-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="habilitando-o-github-pages">11. Habilitando o Github Pages</h2>
+<p>Na página do repositório, clique em Settings e depois em Pages. Em Branch, escolha <code>Main</code> e pressione <code>Save</code>.</p>
+<p>Pronto, em alguns segundos o site estará no ar.</p>
+<p><img src="images/Tela_Git_Page.jpg" class="img-fluid"></p>
 </section>
 <section id="referências-todas-os-sites-foram-criados-com-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="referências-todas-os-sites-foram-criados-com-rstudio">11. Referências (todas os sites foram criados com RStudio)</h2>
