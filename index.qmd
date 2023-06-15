@@ -12,6 +12,10 @@ Nunca se esqueça que seu melhor amigo é a tecla F5!
 
 Sites dos alunos:
 
+::: aside
+Orgulhosamente apresentando os sites dos alunos. Em breve nos sites estarão as apresentações dos projetos dos alunos em Revealjs.
+:::
+
 - [Bruno](https://blinhares94.github.io/repr_furg/)
 - [Josiana](https://josianamm.github.io/Reprodutibilidade/)
 - [Letícia]()
@@ -28,14 +32,22 @@ Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGO
 
 # Aulas e apresentações
 
+::: aside
+As aulas serão incluídas conforme forem acontecendo.
+:::
+
 [Aula inicial](Aula1.html)  
 
 ---
 
 # Tarefas
 
-[Tarefa 1](Tarefa1)  
-[Tarefa 2](Tarefa2)
+::: aside
+As tarefas serão verificadas durante as aulas.
+:::
+
+[Tarefa 1](Tarefa1.html)  
+[Tarefa 2](Tarefa2.html)
 
 # Tutoriais
 
@@ -46,8 +58,9 @@ Estes tutoriais estão em constante evolução, incorporando regularmente novos 
 [Página de exemplo do Quarto](Pagina_Exemplo.html)
 
 ---
+::: aside
+O site pode ser clonado do Github para o RStudio. Aguarde instruções.
+:::
 
 [Código deste site no Github](https://github.com/mauricio-camargo/reprodu2023)
-
-
 
