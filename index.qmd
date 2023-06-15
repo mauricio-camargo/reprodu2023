@@ -6,7 +6,7 @@ format: html
 #git add -A && git commit -m 'staging all files'
 ---
 
-Nunca se esqueça que seu melhor amigo é a tecla F5!
+Nunca se esqueçax que seu melhor amigo é a tecla F5!
 
 ---
 
