@@ -1,41 +1,53 @@
 ---
-title: "Disciplina de Reprodutilibidade científica no R"
+title: "Disciplina de Reprodutilibidade científica no R - Turma 2023"
 lang: pt
 format: html
 #Mágica para dar Commit quando trava com muitos arquivos
 #git add -A && git commit -m 'staging all files'
 ---
 
+Nunca se esqueça que seu melhor amigo é a tecla F5!
+
 ---
 
-[Código desta página em Quarto no Github](https://github.com/mauricio-camargo?tab=repositories)
+Sites dos alunos:
+
+- [Bruno](https://blinhares94.github.io/repr_furg/)
+- [Josiana](https://josianamm.github.io/Reprodutibilidade/)
+- [Letícia]()
+- [Marybeth](https://marybethcostilla.github.io/again/)
+- [Rosana](https://rosanacosta1995.github.io/air_pollution/)
+---
 
 :::{.callout-note}
-Esta disciplina é do `PPGAMB`, e também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
+Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
 :::
 
-### Tutorial de integração do RStudio com o Git
-
-São muitos os passos para integrar o RStudio com o Git. Com o Quarto, tudo ainda é novo e não existe muito material na internet. Mas, no final, certamente terá valido muito à pena.
-
-Preparei este tutorial com todos os passos para, no fim, criar um site completo usando o Quarto, de maneira muito fácil.
-
-[Tutorial de integração ente RStudio e Github](Integrar_Git_RStudio.html)
-
-Como tarefa para a semana que vem, cada um deve criar um site, seguindo o tutorial. Qualquer conteúdo serve, desde as páginas contenham:  
-
-- pelo menos três páginas
-- Links entre estas páginas
-- Links externos
-- pelo menos 1 imagem
-- pelo menos uma tabela e um gráfico do R, inserido com chunk
-- uma fórmula
+---
 
 
-### Aulas anteriores
+# Aulas e apresentações
 
-[Todos os códigos em Quarto das páginas abaixo estão no Github](https://github.com/mauricio-camargo?tab=repositories)
+[Aula inicial](Aula1.html)  
 
-[Aula1.html](Aula1.html)  
-[Tutorial_Quarto.html](Tutorial_Quarto.html)  
+---
+
+# Tarefas
+
+[Tarefa 1](Tarefa1)  
+[Tarefa 2](Tarefa2)
+
+# Tutoriais
+
+Estes tutoriais estão em constante evolução, incorporando regularmente novos aprendizados e atualizações.
+
+[Tutorial instação do RStudio e Git](Integrar_Git_RStudio.html)  
+[Tutorial do Quarto - sempre em evolução](Tutorial_Quarto.html)  
 [Página de exemplo do Quarto](Pagina_Exemplo.html)
+
+---
+
+[Código deste site no Github](https://github.com/mauricio-camargo/reprodu2023)
+
+
+

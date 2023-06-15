@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -131,7 +131,7 @@ Mini-tutorial do Quarto: <a href="https://rpubs.com/camargo/MiniTutorialQuarto" 
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>Esta é uma maneira de instalar vários pacotes de uma só vez.</p>
-</div></div><p>O pacote <code>tinytex</code> do R serve para instalar toda a infra-estrutura para lidar com PDFs.</p>
+</div></div><p>O pacote <code>tinytex</code> do R serve para instalar toda a infra-estrutura do LaTeX para lidar com PDFs.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'tinytex'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
@@ -173,7 +173,7 @@ Para abrir o terminal, clique no botão Iniciar do Windows e digite <code>cmd</c
 </div></div><p>Vamos agora informar seu nome do usuário no Github e seu email usado para abrir a conta. Isso só é feito uma vez.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.name =</span> <span class="st">"SEU NOME NO GITHUB"</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.email =</span> <span class="st">"seu_email_no@gmail.com"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.email =</span> <span class="st">"seu_email_no@gmail.com"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Crie um <strong>Personal Access Token</strong> (PAT)</li>
 </ul>

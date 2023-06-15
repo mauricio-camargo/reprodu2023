@@ -25,7 +25,7 @@ install.packages('usethis','gitcreds','devtools', 'markdown','rmarkdown','knitr'
 Esta é uma maneira de instalar vários pacotes de uma só vez.
 :::
 
-O pacote `tinytex` do R serve para instalar toda a infra-estrutura para lidar com PDFs.  
+O pacote `tinytex` do R serve para instalar toda a infra-estrutura do LaTeX para lidar com PDFs.  
 
 
 ```{.r}
@@ -85,7 +85,7 @@ Vamos agora informar seu nome do usuário no Github e seu email usado para abrir
 ```{.r}
 usethis::use_git_config(
   user.name = "SEU NOME NO GITHUB",
-  user.email = "seu_email_no@gmail.com"
+  user.email = "seu_email_no@gmail.com")
 ```
 
 - Crie um **Personal Access Token** (PAT)
