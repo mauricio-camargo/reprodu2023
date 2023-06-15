@@ -24,12 +24,12 @@ execute:
 <!-- Aqui vai o comentário -->
 ```
 ::: {.column-margin}
-Este estilo de comentário é herdado do HTML e é uma porcaria. 
+Esse estilo de comentário é herdado do HTML e é uma porcaria. 
 :::
 
 #### Novo parágrafo
 ```{r}
-#Dois espaços no final da linha criam um novo parágrafo
+Dois espaços no final da linha criam um novo parágrafo
 ```
 
 ::: {.column-margin}

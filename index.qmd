@@ -2,9 +2,11 @@
 title: "Disciplina de Reprodutilibidade científica no R - Turma 2023"
 lang: pt
 format: html
-#Mágica para dar Commit quando trava com muitos arquivos
-#git add -A && git commit -m 'staging all files'
 ---
+
+:::{.callout-note}
+Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
+:::
 
 Nunca se esqueça que seu melhor amigo é a tecla F5!
 
@@ -21,12 +23,6 @@ Orgulhosamente apresentando os sites dos alunos. Em breve nos sites estarão as 
 - [Letícia]()
 - [Marybeth](https://marybethcostilla.github.io/again/)
 - [Rosana](https://rosanacosta1995.github.io/air_pollution/)
----
-
-:::{.callout-note}
-Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
-:::
-
 ---
 
 
