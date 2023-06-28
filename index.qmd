@@ -3,7 +3,7 @@ title: "Disciplina de Reprodutilibidade científica no R - Turma 2023"
 lang: pt
 format: html
 #Mágica para dar Commit quando trava com muitos arquivos
-#git add -A && git commit -m 'staging all files'
+#git add -A && git commit -m "staging all files"
 
 ---
 

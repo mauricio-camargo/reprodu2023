@@ -131,7 +131,8 @@ ss=Sys.Date()
 
 ::: fragment
 ::: info-box
-Tudo isso nos próximos capítulos...
+A seguir
+...
 :::
 :::
 
