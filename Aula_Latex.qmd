@@ -230,7 +230,6 @@ $$x'=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$$
 ```r
 $$\sigma = \sqrt{\frac{{\sum_{i=1}^{n}(x_i - \mu)^2}}{n}}$$
 ```
-$$\sigma = \sqrt{\frac{{\sum_{i=1}^{n}(x_i - \mu)^2}}{n}}$$
 
 
 Existem ferramentas online para criar fórmulas pelo $\LaTeX$. A mais interessante é o ***[latexeditor](https://latexeditor.lagrida.com)***. Basta criar a fórmula visualmente e transferir para o RStudio.
