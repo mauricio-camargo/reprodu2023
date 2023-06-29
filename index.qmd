@@ -36,6 +36,7 @@ As aulas serão incluídas conforme forem acontecendo.
 :::
 
 [Aula inicial](Aula1.html)  
+[Aula $\LaTeX$](Aula_Latex.html)  
 
 ---
 
@@ -55,10 +56,12 @@ Estes tutoriais estão em constante evolução, incorporando regularmente novos 
 [Tutorial instação do RStudio e Git](Integrar_Git_RStudio.html)  
 [Tutorial do Quarto - sempre em evolução](Tutorial_Quarto.html)  
 [Página de exemplo do Quarto](Pagina_Exemplo.html)
+[]()
+
 
 ---
 ::: aside
-O site pode ser clonado do Github para o RStudio. Aguarde instruções.
+O site pode ser clonado do Github para o RStudio. Entre no repositório do site no Github e clique em "clonar".
 :::
 
 [Código deste site no Github](https://github.com/mauricio-camargo/reprodu2023)
