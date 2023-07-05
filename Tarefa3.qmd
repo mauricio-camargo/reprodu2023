@@ -7,15 +7,19 @@ lang: pt
 ---
 
 :::{.callout-warning}
-Esta tarefa será feira em sala de aula, com a ajuda individual do professor.
+Esta tarefa será feita em sala de aula.
 :::
 
 ---
 
+<br>
 Cada aluno deve escolher um trabalho científico da sua preferência e salvar no seu computador, em pdf.  
-Sua tarefa será divulgar este trabalho científico no seu site, criando uma nova página contendo a descrição do trabalho e um link para uma nova apresentação em revealjs do trabalho. Todo o conteúdo escrito pode ser fake, contendo apenas algumas linhas em cada tópico, sem se preocupar com o sentido do texto. Contudo, o formato e a qualidade gráfica são muito importantes.
+<br>
+Sua tarefa será divulgar este trabalho científico no seu site, criando uma nova página contendo a descrição do trabalho e um link para uma nova apresentação em revealjs do trabalho.  
+<br>
+Todo o conteúdo escrito pode ser fake, contendo apenas algumas linhas em cada tópico, sem se preocupar com o sentido do texto. Contudo, o formato e a qualidade gráfica são muito importantes.
 
-Os passos a seguir serão:
+Os passos da tarefa são os seguintes:
 
 - Crie um novo documento em Quarto html e salve como `tarefa3.qmd`
 - Dê um Commit seguido de um Push para testar o `git`.
