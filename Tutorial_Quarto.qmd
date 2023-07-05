@@ -17,6 +17,12 @@ execute:
   warning: false
 ---
 
+## Linha mágica para commit
+
+```r
+git add -A && git commit -m "staging all files"
+```
+
 ## Formatação básica 
 
 #### Comentários no Quarto
