@@ -64,7 +64,7 @@ As tarefas serão verificadas durante as aulas.
 :::
 
 [Tarefa 1](Tarefa1.html)  
-[Tarefa 2](Tarefa2.html)
-[Tarefa 3](Tarefa3.html)
-[Tarefa 4](Tarefa4.html)
+[Tarefa 2](Tarefa2.html)  
+[Tarefa 3](Tarefa3.html)  
+[Tarefa 4](Tarefa4.html)  
 
