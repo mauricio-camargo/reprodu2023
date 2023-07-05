@@ -16,11 +16,10 @@ Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o G
 
 - [Bruno](https://blinhares94.github.io/repr_furg/)
 - [Josiana](https://josianamm.github.io/Reprodutibilidade/)
-- [Letícia]()
+- [Letícia](https://dentinho09.github.io/reprod_aula/)
 - [Marybeth](https://marybethcostilla.github.io/again/)
 - [Rosana](https://rosanacosta1995.github.io/air_pollution/)
 ---
-
 
 ::: aside
 Estes tutoriais estão em constante evolução , incorporando regularmente novos aprendizados e atualizações.
