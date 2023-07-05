@@ -28,7 +28,7 @@ Esse estilo de comentário é herdado do HTML e é uma porcaria.
 :::
 
 #### Novo parágrafo
-```{r}
+```r
 Dois espaços no final da linha criam um novo parágrafo
 ```
 
