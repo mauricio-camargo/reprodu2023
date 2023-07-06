@@ -8,8 +8,7 @@ format: html
 Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
 :::
 
-
-Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o Github:
+## Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o Github:
 
 - [Bruno](https://blinhares94.github.io/repr_furg/)
 - [Josiana](https://josianamm.github.io/Reprodutibilidade/)
@@ -19,9 +18,14 @@ Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o G
 ---
 
 ::: aside
-Estes tutoriais estão em constante evolução , incorporando regularmente novos aprendizados e atualizações.
+Estes tutoriais estão em constante aprimoramento, incorporando regularmente novos aprendizados e atualizações.
 :::
 
+## Tutoriais de RMarkdown, Quarto, Git e Github.
+
+Todos os tutorais estão atualmente [nesta página](https://mauricio-camargo.github.io/r-eutilizaveis.html).
+
+<!--
 # Tutoriais
 
 [Tutorial instação do RStudio e Git](Integrar_Git_RStudio.html)  
@@ -33,6 +37,8 @@ Estes tutoriais estão em constante evolução , incorporando regularmente novos
 ::: aside
 O site pode ser clonado do Github para o RStudio. Entre no repositório do site no Github e clique em "clonar".
 :::
+
+-->
 
 # Código deste site
 
