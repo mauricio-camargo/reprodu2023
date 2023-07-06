@@ -5,7 +5,7 @@ format: html
 ---
 
 :::{.callout-note}
-Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG.  
+Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG, a partir do site do prof. [Maurício Camargo](https://mauricio-camargo.github.io/).  
 :::
 
 ## Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o Github:
