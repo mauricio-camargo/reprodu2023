@@ -2,9 +2,6 @@
 title: "Disciplina de Reprodutilibidade científica no R - Turma 2023"
 lang: pt
 format: html
-#Mágica para dar Commit quando trava com muitos arquivos
-#git add -A && git commit -m "staging all files"
-
 ---
 
 :::{.callout-note}
@@ -31,7 +28,6 @@ Estes tutoriais estão em constante evolução , incorporando regularmente novos
 [Tutorial do Quarto - sempre em evolução](Tutorial_Quarto.html)  
 [Página de exemplo do Quarto](Pagina_Exemplo.html)
 []()
-
 
 ---
 ::: aside
