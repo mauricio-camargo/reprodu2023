@@ -2,6 +2,7 @@
 title: "Disciplina de Reprodutilibidade científica no R - Turma 2023"
 lang: pt
 format: html
+
 ---
 
 :::{.callout-note}
