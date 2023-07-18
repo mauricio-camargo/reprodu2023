@@ -27,7 +27,7 @@ server <- function(input, output) {
   # Renderizando o gráfico de regressão
   output$regression_plot <- renderPlot({
     data <- generate_data(input$slope, input$intercept, input$noise)
-    
+
     plot(data$x, data$y, pch = 16, col = "blue", xlab = "X", ylab = "Y", main = "Regressão")
     
     # Ajustando a regressão linear

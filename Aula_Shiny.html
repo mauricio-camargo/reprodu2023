@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.340">
 
   <meta name="author" content="Prof.&nbsp;Maurício Garcia de Camargo">
-  <meta name="dcterms.date" content="2023-07-12">
+  <meta name="dcterms.date" content="2023-07-17">
   <title>Reprodutibilidade científica</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -411,50 +411,64 @@ Prof.&nbsp;Maurício Garcia de Camargo
     </div>
 </div>
 
-  <p class="date">2023-07-12</p>
+  <p class="date">2023-07-17</p>
 </section>
 <section id="resumo-da-aula-de-hoje" class="slide level2">
 <h2>Resumo da aula de hoje</h2>
 <p><br><br></p>
 <div class="box">
+<div>
 <ul>
-<li>Momento 1: O que é um aplicativo para web.</li>
-<li>Momento 2: O que é Shiny?<br>
+<li class="fragment">Momento 1: O que é um aplicativo para web.</li>
+<li class="fragment">Momento 2: O que é <code>Shiny</code>?<br>
 </li>
-<li>Momento 3: Quais recursos o Shiny possui?<br>
+<li class="fragment">Momento 3: Quais recursos o <code>Shiny</code> possui?<br>
 </li>
-<li>Momento 4: Construindo um aplicativo Shiny.<br>
+<li class="fragment">Momento 4: Construindo um aplicativo <code>Shiny</code>.<br>
 </li>
-<li>Momento 5: UI (User Interface).</li>
-<li>Momento 6: Códigos do server e outputs.</li>
-<li>Momento 7: Exemplos complexos de aplicativos em Shiny.</li>
-<li>Momento 8: Comnunidades de Shiny na internet.</li>
+<li class="fragment">Momento 5: UI (User Interface).</li>
+<li class="fragment">Momento 6: Códigos do server e outputs.</li>
+<li class="fragment">Momento 7: Exemplos complexos de aplicativos em <code>Shiny</code>.</li>
+<li class="fragment">Momento 8: Comnunidades de <code>Shiny</code> na internet.</li>
 </ul>
+</div>
 </div>
 <div class="footer">
 
 </div>
 </section>
 <section id="o-que-é-um-aplicativo-da-web" class="slide level2">
-<h2>O que é um aplicativo da web?</h2>
+<h2>1. O que é um aplicativo da web?</h2>
 <p><br></p>
+<div class="fragment">
 <p>Um aplicativo da web é um software que roda em um servidor remoto e interage com o usuário através de um browser.</p>
+</div>
 <p><br></p>
+<div class="fragment">
 <p>O software é dividido entre UI (User Interface), que corresponde ao frontend, e códigos do servidor, que corresponde ao backend.</p>
+</div>
 <p><br></p>
+<div class="fragment">
 <p>Uma das vantagens de um aplicativo web é que não há a necessidade de instalação do software na máquina do usuário. Todo o processamento é feito remotamente e devolvido para o browser.</p>
+</div>
 </section>
 <section id="o-que-é-shiny" class="slide level2">
-<h2>O que é <code>Shiny</code>?</h2>
+<h2>2. O que é <code>Shiny</code>?</h2>
 <p><br></p>
+<div class="fragment">
 <p><code>Shiny</code> é um framework para a criação de aplicativos da web que usa códigos do R, que são interativos e reativos, ou seja, obedecem a controles manipulados pelo usuário e mostram um output na tela.</p>
+</div>
 <p><br></p>
-<p>Shiny é capaz de criar aplicativos complexos de forma muito simples, que de outra maneira demandaria muito tempo para serem construídos em JavaScript e HTML.</p>
+<div class="fragment">
+<p><code>Shiny</code> é capaz de criar aplicativos complexos de forma muito simples, que de outra maneira demandaria muito tempo para serem construídos em JavaScript e HTML.</p>
+</div>
 <p><br></p>
+<div class="fragment">
 <p>Para aprender <code>Shiny</code>, basta ter uma boa noção de códigos em R.</p>
+</div>
 </section>
 <section id="quais-recursos-o-shiny-possui" class="slide level2 smaller">
-<h2>Quais recursos o <code>Shiny</code> possui?</h2>
+<h2>3. Quais recursos o <code>Shiny</code> possui?</h2>
 <div>
 <ul>
 <li class="fragment">Fácil de usar e aprender.</li>
@@ -464,12 +478,12 @@ Prof.&nbsp;Maurício Garcia de Camargo
 <li class="fragment">Cria aplicativos da web úteis com apenas algumas linhas de códigos.</li>
 <li class="fragment">Funciona em qualquer ambiente R (Console do R ou RStudio).</li>
 <li class="fragment">É possível enriquecer o layout dos aplicativos usando HTML ou CSS.</li>
-<li class="fragment">Os aplicativos Shiny são “ativos” automaticamente. As saídas mudam instantaneamente conforme os usuários modificam as entradas, sem a necessidade de recarregar o navegador.</li>
+<li class="fragment">Os aplicativos <code>Shiny</code> são “ativos” automaticamente. As saídas mudam instantaneamente conforme os usuários modificam as entradas, sem a necessidade de recarregar o navegador.</li>
 </ul>
 </div>
 </section>
 <section id="construindo-um-aplicativo-shiny." class="slide level2 smaller">
-<h2>Construindo um aplicativo Shiny.</h2>
+<h2>4. Construindo um aplicativo Shiny.</h2>
 <p>Não é necessário instalar nada no RStudio para usar o Shiny atualmente. Versões mais antigas do RStudio precisam instalar o pacote e carregá-lo:</p>
 <p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages('shiny')</span></span>
@@ -492,14 +506,37 @@ Prof.&nbsp;Maurício Garcia de Camargo
 </div>
 </section>
 <section id="ui-user-interface" class="slide level2">
-<h2>UI (User Interface)</h2>
-<p>Uma série de controles (widgets) são embutidos no Shyni.</p>
+<h2>5. UI (User Interface)</h2>
+<p>Shiny traz uma série de controles (widgets) para a construção de UI:</p>
 
 <img data-src="images/shiny1.png" class="r-stretch"></section>
-<section id="exemplos" class="slide level2">
-<h2>Exemplos</h2>
+<section id="códigos-do-server-e-outputs." class="slide level2">
+<h2>6. Códigos do server e outputs.</h2>
+<p><br></p>
+<p>Os códigos do server são usados para capturar os inputs da UI e realizar os cáculos necessários, que serão devolvidos ao usuário na seção output.</p>
+<div class="fragment">
+<p>Nesta parte entram basicamente códigos do R e qualquer background poderá aproveitado.</p>
+</div>
+</section>
+<section id="exemplos-em-shiny-no-rstudio." class="slide level2">
+<h2>8. Exemplos em <code>Shiny</code> no RStudio.</h2>
+<p><br></p>
+<p>A seguir, aplicatitivos da web feitos no RStudio e exemplos de utilização.</p>
+</section>
+<section id="exemplos-mais-complexos-de-aplicativos-em-shiny-e-referências." class="slide level2">
+<h2>8. Exemplos mais complexos de aplicativos em <code>Shiny</code> e referências.</h2>
+<p><br></p>
 <ul>
-<li><a href="https://gallery.shinyapps.io/182-google-charts/">Gráfico de bolhas</a></li>
+<li><p><a href="https://shiny.posit.co/r/gallery/widgets/basic-datatable/">Tabela básica</a></p></li>
+<li><p><a href="https://shiny.posit.co/r/gallery/widgets/widget-gallery/">Galeria de widgets</a></p></li>
+<li><p><a href="https://shiny.posit.co/r/gallery/dynamic-user-interface/dynamic-ui/">Widgets dinÂmicos</a></p></li>
+<li><p><a href="https://shiny.posit.co/r/gallery/application-layout/tabsets/">Múltiplas distribuições</a></p></li>
+<li><p><a href="https://gallery.shinyapps.io/182-google-charts/">Gráfico de bolhas</a></p></li>
+</ul>
+<p><br></p>
+<p>Referência do Shiny</p>
+<ul>
+<li><a href="https://docs.posit.co/shinyapps.io/?_gl=1*1o9vcl2*_ga*MzkxOTEwNC4xNjg5MTIxMDMx*_ga_HXP006LBGY*MTY4OTY0Mzc2NC41LjEuMTY4OTY0Mzg5NC4wLjAuMA..">Shiny - livro Oficial</a></li>
 </ul>
 <div class="footer footer-default">
 
