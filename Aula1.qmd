@@ -63,7 +63,7 @@ ss=Sys.Date()
 :::
 :::
 
-## Momento 2: A descoberta da programação lietrária (Knuth).
+## Momento 2: A descoberta da programação literária (Knuth).
 
 ::: incremental
 -   2012: Primeiro contato com RMarkdown (demonstrar).
@@ -226,9 +226,7 @@ A seguir
 
 <br><br>
 
-Tutorial de Quarto 
-
-[rpubs.com/camargo](http://rpubs.com/camargo)
+[Tutorial de integração entre RStudio e Github](https://mauricio-camargo.github.io/r-eutilizaveis/tutorial_integrar_github_rstudio.html)
 
 
 <!-- wdfwerwer werwerwer werwer -->
