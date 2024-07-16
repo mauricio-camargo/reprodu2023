@@ -72,7 +72,7 @@ ss=Sys.Date()
 
 - ![](images/R-Md.png){width=40%}
 
--   2023 (now): Primeiro curso usando Quarto.
+-   2023: Primeiro curso usando Quarto.
 :::
 
 
