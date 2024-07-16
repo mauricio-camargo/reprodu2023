@@ -34,7 +34,9 @@ Estes tutoriais estão em constante aprimoramento, incorporando regularmente nov
 :::
 
 
-Todos os tutorais estão atualmente [nesta página](https://mauricio-camargo.github.io/r-eutilizaveis.html).
+[Tutorial de integração entre RStudio e Github](https://mauricio-camargo.github.io/r-eutilizaveis/tutorial_integrar_github_rstudio.html)
+
+Os demais tutorais estão atualmente [nesta página](https://mauricio-camargo.github.io/r-eutilizaveis.html).
 
 <!--
 # Tutoriais
