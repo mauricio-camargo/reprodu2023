@@ -29,7 +29,7 @@ format:
 <br><br>
 
 ::: box
-- Momento 1: O R e eu! (depois vocês)  
+- Momento 1: O R e eu! (depois vocês...)  
 - Momento 2: Por que reprodutibilidade?  
 - Momento 3: Conceitos básicos.
 - Momento 4: Elocubrações filosóficas (preview).
