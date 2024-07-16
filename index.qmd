@@ -1,14 +1,16 @@
 ---
-title: "Disciplina de Reprodutilibidade científica no R - Turma 2023"
+title: "Disciplina de Reprodutilibidade científica no R - Turma 2024"
 lang: pt
 format: html
 
 ---
 
 :::{.callout-note}
-Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGOB`, todos da FURG, a partir do site do prof. [Maurício Camargo](https://mauricio-camargo.github.io/).  
+Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO`, `PPGOB` e outros programas de PG da FURG, a partir do site do prof. [Maurício Camargo](https://mauricio-camargo.github.io/).  
 :::
 
+
+<!--
 ## Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o Github:
 
 - [Bruno](https://blinhares94.github.io/repr_furg/)
@@ -17,6 +19,7 @@ Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO` e `PPGO
 - [Marybeth](https://marybethcostilla.github.io/again/)
 - [Rosana](https://rosanacosta1995.github.io/air_pollution/)
 ---
+-->
 
 ::: aside
 Estes tutoriais estão em constante aprimoramento, incorporando regularmente novos aprendizados e atualizações.
@@ -59,6 +62,8 @@ As aulas são atualizadas eventualmente.
 ---
 -->
 
+
+<!--
 # Tarefas
 
 ::: aside
@@ -69,4 +74,5 @@ As tarefas serão verificadas durante as aulas.
 [Tarefa 2](Tarefa2.html)  
 [Tarefa 3](Tarefa3.html)  
 [Tarefa 4](Tarefa4.html)  
+-->
 
