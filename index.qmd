@@ -9,6 +9,8 @@ format: html
 Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO`, `PPGOB` e outros programas de PG da FURG, a partir do site do prof. [Maurício Camargo](https://mauricio-camargo.github.io/).  
 :::
 
+[AULA 1: Introdução à reprodutibilidade científica.](Aula1.html)
+
 
 <!--
 ## Sites dos alunos construídos com Quarto e revealjs dentro do RStudio usando o Github:
