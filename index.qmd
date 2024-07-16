@@ -9,6 +9,9 @@ format: html
 Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO`, `PPGOB` e outros programas de PG da FURG, a partir do site do prof. [Maurício Camargo](https://mauricio-camargo.github.io/).  
 :::
 
+
+# Aulas
+
 [AULA 1: Introdução à reprodutibilidade científica.](Aula1.html)
 
 
@@ -23,11 +26,13 @@ Esta é uma disciplina do `PPGAMB`, que também é oferecida para `PPGO`, `PPGOB
 ---
 -->
 
+
+## Tutoriais de RMarkdown, Quarto, Git e Github.
+
 ::: aside
 Estes tutoriais estão em constante aprimoramento, incorporando regularmente novos aprendizados e atualizações.
 :::
 
-## Tutoriais de RMarkdown, Quarto, Git e Github.
 
 Todos os tutorais estão atualmente [nesta página](https://mauricio-camargo.github.io/r-eutilizaveis.html).
 
@@ -46,7 +51,7 @@ O site pode ser clonado do Github para o RStudio. Entre no repositório do site 
 
 -->
 
-# Código deste site
+## Código deste site
 
 [github.com/mauricio-camargo](https://github.com/mauricio-camargo/reprodu2023)
 
