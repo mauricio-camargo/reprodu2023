@@ -167,7 +167,7 @@ A seguir, aplicatitivos da web feitos no RStudio e exemplos de utilização.
 
 - [Galeria de widgets](https://shiny.posit.co/r/gallery/widgets/widget-gallery/)
 
-- [Widgets dinÂmicos](https://shiny.posit.co/r/gallery/dynamic-user-interface/dynamic-ui/)
+- [Widgets dinâmicos](https://shiny.posit.co/r/gallery/dynamic-user-interface/dynamic-ui/)
 
 - [Múltiplas distribuições](https://shiny.posit.co/r/gallery/application-layout/tabsets/)
 

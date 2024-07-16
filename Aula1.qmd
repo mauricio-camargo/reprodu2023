@@ -47,7 +47,7 @@ ss=Sys.Date()
 
 ::: incremental
 -   1986-1990: Oceanólogo!
--   1991-2000: Mestrados e doutorado. Rei do Statistica!
+-   1991-2000: Mestrados e doutorado. Início  no programa Statistica!
 -   2001-2004: Início do docência no CEM... Tudo no Statistica!
 -   2004: Descoberta do R!
 -   2005: Início da docência no R.
