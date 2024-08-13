@@ -1,5 +1,5 @@
 ---
-title: "Disciplina de Reprodutilibidade científica no R - Turma 2024"
+title: "Página desativada - Disciplina de Reprodutilibidade científica no R - Turma 2023"
 lang: pt
 format: html
 
